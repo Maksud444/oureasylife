@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 const Reviews = async ({ productId }: { productId: string }) => {
   const reviewRes = await fetch(
     `https://api.fera.ai/v3/public/reviews?product.id=${productId}&public_key=${process.env.NEXT_PUBLIC_FERA_ID}`
@@ -16,7 +16,7 @@ const Reviews = async ({ productId }: { productId: string }) => {
           <div className="flex flex-col gap-4" key={review.id}>
             {/* USER */}
             <div className="flex items-center gap-4 font-medium">
-              <img
+              <Image
                 src={review.user?.avatar || "/default-avatar.png"}
                 alt={review.user?.name || "User"}
                 className="w-10 h-10 rounded-full"

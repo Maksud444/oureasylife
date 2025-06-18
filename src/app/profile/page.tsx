@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import UpdateButton from "@/components/UpdateButton";
 import { updateUser } from "@/lib/actions";
 import { wixClientServer } from "@/lib/wixClientServer";
