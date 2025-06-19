@@ -74,7 +74,7 @@ const Slider = () => {
                 alt=""
                 fill
                 sizes="100%"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
