@@ -26,10 +26,9 @@ const Navbar = () => {
             <div className="text-2xl tracking-wide">oureasylife</div>
           </Link>
           <div className="hidden xl:flex gap-4">
-            <Link href="/">Homepage</Link>
             <Link href="/list?cat=all-products">Shop</Link>
             <Link href="/">Deals</Link>
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
             <Link href="/">Contact</Link>
           </div>
         </div>
